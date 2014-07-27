@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
+<head>
+
+	<!-- Basic Page Needs
+  ================================================== -->
+	<meta charset="utf-8">
+	<title>How do I write things in Swift?</title>
+	<meta name="description" content="How do I write things in Swift?">
+	<meta name="author" content="Zack McBride">
+
+	<!-- Mobile Specific Metas
+  ================================================== -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<!-- CSS
+  ================================================== -->
+	<link rel="stylesheet" href="stylesheets/base.css">
+	<link rel="stylesheet" href="stylesheets/skeleton.css">
+	<link rel="stylesheet" href="stylesheets/layout.css">
+
+	<!--[if lt IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+
+	<!-- Favicons
+	================================================== -->
+	<link rel="shortcut icon" href="images/favicon.ico">
+	<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+
+</head>
+<body>
+
+
+
+	<!-- Primary Page Layout
+	================================================== -->
+
+	<!-- Delete everything in this .container and get started on your own site! -->
+
+	<div class="container">
+		<div class="sixteen columns"><br /><br />
+		<h1>How do I write things in Swift?</h1><br /><br />
+			<p>
+			<h2>Classes</h2>
+
+			<code>class <b>className</b> {<br />
+				&nbsp;&nbsp;&nbsp;<b>statements</b><br />
+			}
+			</code>
+			</p><br />
+			<p>
+			<h2>Protocols</h2>
+
+			<code>protocol <b>protocolName</b> {<br />
+				&nbsp;&nbsp;&nbsp;<b>protocolFunctions</b><br />
+			}
+			</code>
+			</p><br />
+			<p>
+			<h2>Enums</h2>
+
+			<code>enum <b>enumName</b> {<br />
+				&nbsp;&nbsp;&nbsp;case <b>memberValue</b>, <b>anotherMemberValue</b><br />
+			}
+			</code>
+			</p><br />
+			<p>
+			<h2>Structs</h2>
+
+			<code>struct <b>structName</b> {<br />
+				&nbsp;&nbsp;&nbsp;<b>statements</b><br />
+			}
+			</p><br />
+
+			<p>
+			<h2>Mutating Properties of a Structure</h2>
+
+			<code>struct <b>structName</b> {<br />
+				&nbsp;&nbsp;&nbsp;mutating func <b>functionName</b> {
+				<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>statements</b><br />
+				&nbsp;&nbsp;&nbsp;}<br />
+			}
+			</p><br />
+
+			<p>
+			<h2>Functions</h2>
+
+			<code>
+				func <b>functionName</b>(<b>parameters</b>) -> <b>returnType</b> { <br />
+				&nbsp;&nbsp;&nbsp;<b>statements</b><br /> }
+			</code>
+			</p><br />
+			<p>
+			<h2>Class-Level Functions</h2>
+
+			<code>
+				class func <b>functionName</b>(<b>parameters</b>) -> <b>returnType</b> {<br /> 
+				&nbsp;&nbsp;&nbsp;<b>statements</b><br /> }
+			</code>
+			</p><br />
+			<p>
+			<h2>Extensions (Categories)</h2>
+
+			<code>extension <b>classToExtend</b>: <b>optionalProtocol</b> {<br />
+				&nbsp;&nbsp;&nbsp;<b>statements</b><br />
+			}
+			</code>
+			</p><br />
+			<p>
+			<h2>In-out parameters</h2>
+
+			<code>
+				func <b>functionName</b>(inout <b>parameterName</b>: <b>parameterType</b>) { <br />
+				&nbsp;&nbsp;&nbsp;<b>statements</b><br /> }
+			</code>
+			</p><br />
+			<p>
+			<h2>Subscripting</h2>
+
+			<code>
+				struct <b>structToSubscript</b> {<br />
+				&nbsp;&nbsp;&nbsp;let <b>constantToSubscript</b> = value<br /><br />
+				&nbsp;&nbsp;&nbsp;subscript( <b>parameterName</b>: <b>parameterType</b> ) -> <b>returnType</b> {<br />
+        			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>statements</b><br />
+    			&nbsp;&nbsp;&nbsp;}<br />
+			}
+				
+			</code>
+			</p><br />
+			<p>
+			<h2>Unowned Reference Usage</h2>
+
+			<code>
+				var closure = { <b>[unowned self]</b> in <br />
+				&nbsp;&nbsp;&nbsp;<b>self.</b>property<br />
+			}
+			</code>
+			</p><br />
+			<p>
+			<h2>Closures</h2>
+
+			<code>
+				{ (<b>parameters</b>) -> <b>returnType</b> in <b>statements</b> }</code><br /><br /><i>or</i><br /><br />
+				<code>{ (<b>parameters</b>) -> <b>returnType</b> in <br />&nbsp;&nbsp;&nbsp;<b>statements</b><br />&nbsp;&nbsp;&nbsp;return <b>result</b><br />}
+			</code>
+			</p><br />
+			<p>
+			<h2>Generics</h2>
+
+			<code>
+				func <b>functionName</b>&lt;T&gt;(<b>parameterName</b>: T) -> <b>returnType</b> { <br />
+				&nbsp;&nbsp;&nbsp;<b>statements</b><br />
+			}
+			</code>
+			</p><br />
+			<p>
+			<h2>Type-Casting</h2>
+
+			<code>
+				<b>expression</b> as <b>type</b><br />
+
+				<b>expression</b> as? <b>type</b>
+			</code>
+			</p><br />
+			<p>
+			<h2>Runtime Type-Checking</h2>
+
+			<code>
+				<b>expression</b> is <b>type</b>
+			</code>
+			</p><br />
+			<p>
+			<h2>String interpolation</h2>
+
+			<code>
+				println("Swift makes me feel <b>\(object)</b> inside")
+			</code>
+			</p><br />
+			<h2>Attributes Reference</h2>
+
+			<p>
+				<code><b>@assignment</b></code><br />
+			Apply this attribute to functions that overload a compound assignment operator. Functions that overload a compound assignment operator must mark their initial input parameter as inout.
+			</p>
+
+			<p>
+				<code><b>@class_protocol</b></code><br />
+			Apply this to a protocol to indicate that the protocol can be adopted by class types only.
+			</p>
+
+			<p>
+				<code><b>@exported</b></code><br />
+			Apply this to an import statement. Any modules that import this module will have access to its exports. 
+			</p>
+
+			<p>
+				<code><b>@final</b></code><br />
+			Apply this to a class to indicate that it cannot be further subclassed.
+			</p>
+
+			<p>
+				<code><b>@lazy</b></code><br />
+			A lazy stored property is a property whose initial value is not calculated until the first time it is used.
+			</p>
+
+			<p>
+				<code><b>@NSCopying</b></code><br />
+			Behaves similarly to the objective-c copy property attribute
+			</p>
+
+			<p>
+				<code><b>@NSManaged</b></code><br />
+			Indicates that this property is managed by Core Data at runtime
+			</p>
+
+			<p>
+				<code><b>@objc</b></code><br />
+			Apply this attribute to any declaration that can be represented in Objective-C. Protocols marked with the <code>@objc</code> can't inherit from protocols that aren't.
+			</p>
+
+			<p>
+				<code><b>@optional / @required</b></code><br />
+			Function similarly to objective-c, marking methods as optional or required within a protocol.
+			</p>
+
+			<p>
+				<code><b>@auto_closure</b></code><br />
+			Delay the evaluation of an expression by wrapping it in a closure with no arguments.
+			</p>
+
+			<p>
+				<code><b>@noreturn</b></code><br />
+			Indicate that the type or function doesn't return to its caller.
+			</p>
+
+
+		</div>
+	</div><!-- container -->
+
+
+<!-- End Document
+================================================== -->
+</body>
+
+<footer>
+	<a href="http://twitter.com/zzackkly">@zzackkly</a>
+</footer>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-51746312-1', 'fuckingswiftsyntax.com');
+  ga('send', 'pageview');
+
+</script>
+</html>

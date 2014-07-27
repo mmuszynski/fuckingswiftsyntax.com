@@ -1,4 +1,4 @@
-fuckingswiftsyntax.com
-======================
+zackmcbride.github.io
+=====================
 
-How do I write things in Swift?
+FuckingSwiftSyntax.com
